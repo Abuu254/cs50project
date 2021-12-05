@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>WELCOME {{ current_user.username }}!</h1>
+    <div >
+        <a class="btn btn-primary btn-lg" href="{{url_for('banks')}}">BOOK A TICKET IN BANKING SECTOR</a>
+        <a class="btn btn-primary btn-lg" href="{{url_for('hospital')}}">BOOK A TICKET IN HEALTH SECTOR</a>
+    </div>
+{% endblock %}

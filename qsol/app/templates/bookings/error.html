@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{message}}</h1>
+<span>Your ticket number is: {{ticket}}</span><br>
+<span>{{bookings}}</span><br>
+<span>Current number of people in Queue: {{number_of_people}}</span><br>
+<span>Your position in Queue is: {{position}}</span>
+{% endblock %}

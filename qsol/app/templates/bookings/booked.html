@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{message}}</h1>
+<span>Welcome to the Queue {{user_name}}. Wait for your turn to be served.</span><br>
+<span>Your Ticket number is: <b>{{ticket_number}}</b></span><br>
+<span>Current number of people in Queue: {{number_of_people}}</span><br>
+<span>Your position in Queue is: {{position}}</span><br>
+<span>{{bookings}}</span>
+{% endblock %}
