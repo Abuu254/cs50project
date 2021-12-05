@@ -11,7 +11,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db, render_as_batch=True)
 login = LoginManager(app)
 
-# requiring user to login before navigating certain pages, when they login, they are then redirected to those pages
+# Requiring user to login before navigating certain pages, when they login, they are then redirected to those pages
 login.login_view = 'login'
 
 from app import routes, models
